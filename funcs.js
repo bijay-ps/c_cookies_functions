@@ -28,11 +28,19 @@ function addingTwoNumbs(a,b) {
    console.log('line 27: ', result);
 }
 
-const res = addingTwoNumbs(56, 23); // Arguments 56+23 = 79
+// const res = addingTwoNumbs(56, 23); // Arguments 56+23 = 79
 // addingTwoNumbs(111,-986); // Arguments
-console.log('line no. 33: ', res);
+// console.log('line no. 33: ', res);
 
 let i = 2;
 let j = 5;
 let k = i + j; // 2 + 5 = 7
-console.log(k);
+// console.log(k);
+
+function calculateAreaOfCircle(radius, pi = 3.14) {
+    console.log(pi, typeof pi);
+    console.log(radius, typeof radius);
+    console.log(pi * radius * radius);
+}
+
+calculateAreaOfCircle(10);
