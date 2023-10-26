@@ -11,15 +11,17 @@ let j = 5;
 let k = 2*(i + j); // 2 * 7 = 14
 
 const addition2Numbs = function(a,b) {
-    console.log("from func exprsn",a+b);
+    console.log("from func expression: ", a+b);
 }
 
-// addition2Numbs(2,3);
+addition2Numbs(2,3);
 
 // Anonymous Function
-const fName = (function() {
-    return "Bijay";
-})();
+(function() {
+    let a = 4,  b = 5;
+    const sum = a + b;
+    console.log(sum);
+}());
 
 // (function(a,b) {
 //     return a*b;
@@ -31,9 +33,7 @@ const fName = (function() {
 
 // Arrow Functions (fat arrow fuctions =>)
 
-greet();
-
-var greet = () => {
+const greet = () => {
     console.log("Hello, my name is Bijay. I am a teacher");
 }
 
@@ -115,11 +115,11 @@ function* infiniteLoop() {
 
 const genrtr = infiniteLoop();
 
+/*console.log(genrtr.next().value);
 console.log(genrtr.next().value);
 console.log(genrtr.next().value);
 console.log(genrtr.next().value);
 console.log(genrtr.next().value);
 console.log(genrtr.next().value);
 console.log(genrtr.next().value);
-console.log(genrtr.next().value);
-console.log(genrtr.next().value);
+console.log(genrtr.next().value);*/
